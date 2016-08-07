@@ -10,7 +10,25 @@ $page_id = $page->ID;
 		
 		<div class="left">
 			
-			<?php the_field('content_left', $page_id);?>
+			<ul class="bars">
+
+				<?php while(have_rows('list_left',$page_id)):the_row();?>
+				<li>
+					<a 	href="<?php the_sub_field('url');?>"
+						style="background-image:url('<?php the_sub_field('icon');?>')"
+					>
+						<?php the_sub_field('title');?>
+					</a>
+				</li>
+				<?php endwhile;?>
+
+			</ul>
+
+		</div>
+
+		<div class="center">
+			
+			<?php the_field('content_center', $page_id);?>
 
 		</div>
 
