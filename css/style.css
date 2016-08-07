@@ -1,0 +1,168 @@
+/********************************************************
+	BAZA
+*********************************************************/
+
+* {
+/*	border:1px solid red;
+*/}
+
+html {
+  	box-sizing: border-box;
+}
+*, *:before, *:after {
+  	box-sizing: inherit;
+}
+
+body, html {
+	padding:0;
+	margin:0;
+	background:white;
+	font-size:18px;
+	font-family: 'Montserrat', sans-serif;
+	color:#454545;
+}
+
+.wrapper_center {
+	margin:0 auto;
+	max-width:1000px;
+}
+
+a {
+	text-decoration:none;
+	color:#454545;
+}
+
+/********************************************************
+	BANNER MAIN
+*********************************************************/
+
+.banner_main {
+	min-height:300px;
+	padding:20px;
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:cover;
+	display:flex;
+	justify-content:center;
+}
+
+.banner_main .wrapper {
+	padding:0;
+	margin:auto;
+}
+
+.banner_main .wrapper .content {
+	padding:0;
+	color:white;
+	text-shadow:1px 1px 1px black;
+}
+
+.banner_main .wrapper .content p {
+
+}
+
+/********************************************************
+	MAIN MENU
+*********************************************************/
+
+.main_menu {
+	background:#363636;
+}
+
+.main_menu .wrapper {
+	display:flex;
+	justify-content:space-between;
+	flex-wrap:wrap;
+}
+
+.main_menu .wrapper .sub_menu {
+	display:flex;
+	justify-content:center;
+	flex-wrap:wrap;
+}
+
+.main_menu .wrapper .sub_menu.left {
+
+}
+
+.main_menu .wrapper .sub_menu.right {
+
+}
+
+.main_menu .wrapper .sub_menu .menu_entry {
+	text-align:center;
+	display:block;
+	color:white;
+	text-decoration:none;
+	line-height:50px;
+	font-size:14px;
+	padding:0 30px;
+	background-color:transparent;
+	transition:all 500ms;
+}
+
+.main_menu .wrapper .sub_menu .menu_entry:hover {
+	background-color:#008768;
+}
+
+.main_menu .wrapper .sub_menu .menu_entry.has_icon {
+	background-repeat:no-repeat;
+	background-size:20px 20px;
+	background-position:left 20px center;
+	padding-left:50px;
+}
+
+.main_menu .wrapper .sub_menu .menu_entry.has_icon.anim:hover {
+	background-position:left calc(100% - 20px) center;
+	padding-left:30px;
+	padding-right:50px;
+}
+
+.main_menu .wrapper .sub_menu .menu_entry.has_icon.social_fb {
+	background-image:url('../img/social_fb_white.png');
+}
+
+.main_menu .wrapper .sub_menu .menu_entry.has_icon.social_fb:hover {
+	background-color:#0E3A61;
+}
+
+/********************************************************
+	PART ABOUT
+*********************************************************/
+
+.part_about {
+	padding:20px;
+	background:#EDEDED;
+	border-bottom:1px solid #7D7D7D;
+}
+
+.part_about .wrapper {
+	padding:0;
+	display:flex;
+	justify-content:center;
+	flex-wrap:wrap;
+}
+
+.part_about .wrapper .left {
+	margin:auto;
+}
+
+.part_about .wrapper .left > p {
+	margin:0;
+	padding:0;
+}
+
+.part_about .wrapper .right {
+	margin:auto;
+}
+
+.part_about .wrapper .right .img_circle {
+	width:150px;
+	height:150px;
+	border-radius:75px;
+	overflow:hidden;
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:contain;
+}
+
