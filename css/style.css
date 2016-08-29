@@ -3,8 +3,8 @@
 *********************************************************/
 
 * {
-/*	border:1px solid red;
-*/}
+	/*border:1px solid red;*/
+}
 
 html {
   	box-sizing: border-box;
@@ -143,8 +143,13 @@ a {
 	flex-wrap:wrap;
 }
 
+.part_about .wrapper > div {
+	padding:20px 0;
+	margin:auto;
+}
+
 .part_about .wrapper .left {
-	margin:auto 0;
+
 }
 
 .part_about .wrapper .left ul.bars {
@@ -160,16 +165,13 @@ a {
 }
 
 .part_about .wrapper .left ul.bars li a {
-	padding:25px 30px 25px 80px;
+	padding:25px 30px 25px 90px;
 	display:block;
-	border:1px solid #363636;
-	background-color:transparent;
 	background-size:32px 32px;
 	background-repeat:no-repeat;
 	background-position:left 20px center;
-	text-align:right;
+	text-align:center;
 	color:#363636;
-	border-radius:5px;
 	width:100%;
 	font-size:14px;
 	line-height:20px;
@@ -177,12 +179,11 @@ a {
 }
 
 .part_about .wrapper .left ul.bars li a:hover {
-	padding:25px 40px 25px 70px;
-	border-radius:30px;
+	padding:25px 40px 25px 80px;
 }
 
 .part_about .wrapper .center {
-	margin:auto 0;
+
 }
 
 .part_about .wrapper .center > p {
@@ -191,7 +192,7 @@ a {
 }
 
 .part_about .wrapper .right {
-	margin:auto 0;
+
 }
 
 .part_about .wrapper .right .img_circle {
@@ -204,3 +205,178 @@ a {
 	background-size:contain;
 }
 
+/********************************************************
+	PART ARCHIVE
+*********************************************************/
+
+.blog_archive {
+	padding:0 20px;
+}
+
+.blog_archive .wrapper {
+	padding:50px 0;
+}
+
+.blog_archive .post {
+	padding:20px 0;
+}
+
+.blog_archive .post .header {
+	width:100%;
+	padding:10px 0;
+	display:flex;
+	flex-wrap:nowrap;
+	justify-content:flex-start;
+}
+
+.blog_archive .post .header .date_container {
+	
+}
+
+.blog_archive .post .header .date_container .date {
+	padding:10px;
+	text-align:center;
+	border-radius:8px;
+	background:#7A564B;
+	text-shadow:1px 1px 1px black;
+	border:1px dashed white;
+	box-shadow:0 0 0 2px #7A564B;
+	width:80px;
+	min-height:80px;
+	display:flex;
+	flex-wrap:wrap;
+}
+
+.blog_archive .post .header .date_container .date .wrapper {
+	margin:auto;
+	padding:0;
+}
+
+.blog_archive .post .header .date_container .date .day {
+	display:block;
+	font-size:22px;
+	font-weight:bold;
+	color:#FFFCB0;
+}
+
+.blog_archive .post .header .date_container .date .sub_day {
+	display:block;
+	font-size:9px;
+	color:#FFFCB0;
+}
+
+.blog_archive .post .header .date_container .date .sub_day:first-line {
+	font-size:11px;
+}
+
+.blog_archive .post .header .title_container {
+	font-size:22px;
+	padding:0 0 0 30px;
+	line-height:30px;
+	margin:auto 0;
+}
+
+.blog_archive .post .content {
+	font-size:14px;
+	line-height:25px;
+}
+
+/********************************************************
+	FOOTER
+*********************************************************/
+
+footer {
+	background:#363636;
+	padding:20px;
+	font-size:13px;
+	line-height:20px;
+	color:white;
+	font-family:'Roboto', sans-serif;
+}
+
+footer > .wrapper {
+	display:flex;
+	justify-content:space-between;
+	flex-wrap:wrap;
+}
+
+footer > .wrapper > * {
+	 margin:auto 0;
+}
+
+footer .infobox {
+
+}
+
+footer .author {
+	text-align:right;
+}
+
+footer .author span {
+	display:block;
+	padding:5px 0 5px;
+	text-shadow:1px 1px 0 black;
+}
+
+footer .author span.title {
+	color:#E3D53B;
+}
+
+footer .author .line {
+	border-bottom:1px solid white;
+	width:50px;
+	margin:0 0 0 auto;
+}
+
+footer .author span.sub {
+	color:#E3D53B;
+}
+
+/********************************************************
+	PART HOME CONTENT BOXES
+*********************************************************/
+
+.content_boxes {
+	padding:50px 5px;
+	background:white;
+}
+
+.content_boxes > .wrapper {
+
+}
+
+.content_boxes .box {
+	display:flex;
+	justify-content:space-between;
+	flex-wrap:wrap;
+	padding:20px 0;
+	margin:0;
+	font-size:14px;
+	line-height:25px;
+	border:1px solid transparent;
+	transition:all 500ms;
+}
+
+.content_boxes .box:hover {
+	border-bottom:1px solid gray;
+	border-top:1px solid gray;
+}
+
+.content_boxes .box:nth-child(even) {
+	flex-direction:row-reverse;
+}
+
+.content_boxes .box .content {
+	max-width:700px;
+	transition:all 500ms;
+	padding:0 15px;
+}
+
+.content_boxes .box .thumbnail {
+	margin:auto;
+	padding:20px 10px;
+}
+
+.content_boxes .box .thumbnail img {
+	max-width:100%;
+}

@@ -2,7 +2,7 @@
 
 $page = get_page_by_path('part_about', null, 'theme_settings');
 $page_id = $page->ID;
-
+$x = 0;
 ?>
 
 <div class="part_about">
@@ -14,7 +14,7 @@ $page_id = $page->ID;
 
 				<?php while(have_rows('list_left',$page_id)):the_row();?>
 				<li>
-					<a 	href="<?php the_sub_field('url');?>"
+					<a 	href="#box_<?php echo$x++;?>"
 						style="background-image:url('<?php the_sub_field('icon');?>')"
 					>
 						<?php the_sub_field('title');?>
