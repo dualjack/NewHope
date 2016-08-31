@@ -3,8 +3,8 @@
 *********************************************************/
 
 * {
-	/*border:1px solid red;*/
-}
+/*	border:1px solid red;
+*/}
 
 html {
   	box-sizing: border-box;
@@ -379,4 +379,75 @@ footer .author span.sub {
 
 .content_boxes .box .thumbnail img {
 	max-width:100%;
+}
+
+/********************************************************
+	PAGE CONTENT
+*********************************************************/
+
+.page_content {
+	padding:50px 20px;
+}
+
+.page_content > .wrapper {
+	display:flex;
+	justify-content:center;
+	flex-wrap:wrap;
+}
+
+.page_content .sidebar {
+	max-width:300px;
+	padding:10px 40px 10px 0;
+	margin-right:40px;
+	border-right:1px solid #D3D9DB;
+}
+
+.page_content .sidebar h2 {
+	font-size:18px;
+	font-weight:bold;
+	padding:0;
+	margin:0;
+}
+
+.page_content .sidebar .sections_list {
+	padding:10px 0;
+}
+
+.page_content .sidebar .sections_list .section_title {
+	padding:10px 0 10px 10px;
+	font-size:12px;
+	width:100%;
+	display:block;
+}
+
+.page_content .sidebar .sections_list .section_title:hover {
+	color:#3AAFD6;
+}
+
+.page_content .content_box_sections {
+	flex-grow:1;
+	flex-basis:50%;
+	min-width:70%;
+}
+
+.page_content .content_box_sections .box {
+	padding-bottom:40px;
+}
+
+.page_content .content_box_sections .box h2 {
+	display:block;
+	padding:20px 0;
+	margin:0;
+	border-bottom:1px solid #9BABB0;
+}
+
+.page_content .content_box_sections .box .content {
+	font-size:14px;
+	line-height:20px;
+}
+
+.page_content .content_box_main {
+	font-size:14px;
+	line-height:20px;
+	padding:30px 20px;
 }
