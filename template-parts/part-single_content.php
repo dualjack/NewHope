@@ -6,8 +6,10 @@
 
 <?php endif;?>
 
+<?php while(have_posts()):the_post();?>
+
 <div class="single_post_content">
-	<div class="wrapper body_center body_pad max_width_3">
+	<div class="wrapper wrapper_center">
 		
 		<div class="head">
 			<h1 class="title">
@@ -24,3 +26,5 @@
 
 	</div>
 </div>
+
+<?php endwhile;?>
