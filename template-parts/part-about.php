@@ -1,7 +1,6 @@
 <?php
 
-$page = get_page_by_path('part_about', null, 'theme_settings');
-$page_id = $page->ID;
+$page_id = 233;
 $x = 0;
 ?>
 

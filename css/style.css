@@ -315,7 +315,6 @@ footer .author {
 footer .author span {
 	display:block;
 	padding:5px 0 5px;
-	text-shadow:1px 1px 0 black;
 }
 
 footer .author span.title {
@@ -427,7 +426,7 @@ footer .author span.sub {
 .page_content .content_box_sections {
 	flex-grow:1;
 	flex-basis:50%;
-	min-width:70%;
+	min-width:50%;
 }
 
 .page_content .content_box_sections .box {
@@ -450,4 +449,35 @@ footer .author span.sub {
 	font-size:14px;
 	line-height:20px;
 	padding:30px 20px;
+}
+
+/********************************************************
+	SOCIAL LINK
+*********************************************************/
+
+.social_link {
+	display:flex;
+	justify-content:center;
+	flex-wrap:wrap;
+	padding:50px 20px;
+}
+
+.social_link .icon {
+	display:block;
+	width:32px;
+	height:32px;
+	background-size:cover;
+	margin:0 15px;
+}
+
+.social_link .icon.fb {
+	background-image:url('../img/facebook.png');
+}
+
+.social_link .icon.tw {
+	background-image:url('../img/twitter.png');
+}
+
+.social_link .icon.gp {
+	background-image:url('../img/google-plus.png');
 }
