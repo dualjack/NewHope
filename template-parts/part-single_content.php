@@ -12,13 +12,10 @@
 	<div class="wrapper wrapper_center">
 		
 		<div class="head">
-			<h1 class="title">
-				<?php the_title();?>
-			</h1>
-			<br/>
-			<div class="date">
-				<?php the_date();?>
-			</div>
+
+			<div class="title"><?php the_title();?></div>
+			<div class="time"><?php the_date();?></div>
+
 		</div>
 		<div class="content">
 			<?php the_content();?>

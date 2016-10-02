@@ -9,7 +9,7 @@ add_action( 'wp_enqueue_scripts', 'enqueue_scripts' );
 add_action( 'admin_enqueue_scripts', 'enqueue_admin_styles' );
 
 function enqueue_styles(){
-	wp_enqueue_style( 'core', get_template_directory_uri() . '/css/style.css', false, "1.8" );
+	wp_enqueue_style( 'core', get_template_directory_uri() . '/css/style.css', false, "1.9" );
 	wp_enqueue_style( 'slick', get_template_directory_uri() . '/js/slick/slick.css', false );
 	wp_enqueue_style( 'slick-theme', get_template_directory_uri() . '/js/slick/slick-theme.css', false );
 }
